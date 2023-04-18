@@ -13,6 +13,6 @@ contract DecentralizedAirBNB{
         address Owner;
         string propName;
         string city;
-        uint256 pricePerDay;
+        uint256 pricePerDay;// auto
     }
 }
