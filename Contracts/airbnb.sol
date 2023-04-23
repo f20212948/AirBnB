@@ -4,6 +4,10 @@ pragma solidity >=0.8.2 <0.9.0;
 
 import "./b.sol";
 
+  /**
+   * @title DecentralAirbnb
+   * @dev set and change DecentralAirbnb
+   */
 contract DecentralAirbnb is PriceConverter {
     //--------------------------------------------------------------------
     // VARIABLES
@@ -33,6 +37,10 @@ contract DecentralAirbnb is PriceConverter {
     }
 
     RentalInfo[] public rentals;
+
+    function getAllRentals() public view returns (RentalInfo[] memory) {
+    return rentals;
+}
 
     mapping(uint256 => Booking[]) rentalBookings;
 
